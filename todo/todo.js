@@ -22,18 +22,17 @@ const addTask = (task) => {
 };
 
 const listTasks = () => {
-  const tasks = loadTasks()
+  const tasks = loadTasks();
   tasks.forEach((task, index) => {
-    console.log(`${index+1} - ${task.task}`)
+    console.log(`${index + 1} - ${task.task}`);
   });
-}
+};
 
 const removeTask = (taskId) => {
   let tasks = loadTasks();
-  tasks = tasks.filter((_, t) => t !== taskId );
+  tasks = tasks.filter((_, i) => i !== taskId-1);
   saveTasks(tasks);
-  
-}
+};
 const command = process.argv[2];
 const argument = process.argv[3];
 
