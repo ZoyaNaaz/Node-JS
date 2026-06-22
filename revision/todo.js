@@ -13,7 +13,7 @@ const loadTasks = () => {
 const saveTasks = (tasks) => {
   const dataJSON = JSON.stringify(tasks);
   fs.writeFileSync(filePath, dataJSON);
-  console.log("task added", tasks);
+  console.log("Task Added: ", tasks);
 };
 const addTask = (task) => {
   const tasks = loadTasks();
@@ -30,9 +30,10 @@ const listTasks = () => {
 
 const removeTask = (taskId) => {
   const tasks = loadTasks();
-  const newTasks = tasks.filter((_, i) => i !== taskId - 1);
-  saveTasks(newTasks);
+  tasks.filter((_, i) => i !== taskId - 1);
+  saveTasks(tasks);
 };
+
 const command = process.argv[2];
 const argument = process.argv[3];
 
@@ -43,5 +44,5 @@ if (command === "add") {
 } else if (command === "remove") {
   removeTask(parseInt(argument));
 } else {
-  console.log("command not found!");
+  console.log("command not found");
 }
