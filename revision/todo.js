@@ -1,48 +1,47 @@
 const fs = require("fs");
 const filePath = "./tasks.json";
 
-const loadTasks = () => {
-  try {
-    const dataBuffer = fs.readFileSync(filePath);
-    const dataJSON = dataBuffer.toString();
-    return JSON.parse(dataJSON);
-  } catch (error) {
-    return [];
-  }
-};
-const saveTasks = (tasks) => {
-  const dataJSON = JSON.stringify(tasks);
-  fs.writeFileSync(filePath, dataJSON);
-  console.log("Task Added: ", tasks);
-};
+const loadTask = () => {
+try {
+  const dataBuffer = fs.readFileSync(filePath)
+  return JSON.parse(dataBuffer.toString())
+} catch (error) {
+  return []
+}
+}
+
+const saveTask = (tasks) => {
+  const dataJSON = JSON.stringify(tasks)
+  fs.writeFileSync(filePath, dataJSON)
+  console.log("task Added: ", tasks)
+}
+
 const addTask = (task) => {
-  const tasks = loadTasks();
-  tasks.push({ task });
-  saveTasks(tasks);
-};
+  const tasks = loadTask()
+  tasks.push({task})
+  saveTask(tasks)
+}
 
 const listTasks = () => {
-  const tasks = loadTasks();
-  tasks.forEach((task, index) => {
-    console.log(`${index + 1} - ${task.task}`);
+  const tasks = loadTask();
+
+  tasks.forEach((task,index) => {
+    console.log(`${index+1} - ${task.task}`)
   });
-};
+}
 
 const removeTask = (taskId) => {
-  const tasks = loadTasks();
-  tasks.filter((_, i) => i !== taskId - 1);
-  saveTasks(tasks);
-};
-
-const command = process.argv[2];
-const argument = process.argv[3];
+  let tasks = loadTask();
+ tasks = tasks.filter((_, index) => index !== taskId-1)
+ saveTask(tasks)
+}
+let command = process.argv[2]
+let argument = process.argv[3]
 
 if (command === "add") {
-  addTask(argument);
+  addTask(argument)
 } else if (command === "list") {
-  listTasks();
+  listTasks()
 } else if (command === "remove") {
-  removeTask(parseInt(argument));
-} else {
-  console.log("command not found");
+  removeTask(parseInt(argument))
 }
