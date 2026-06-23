@@ -5,6 +5,7 @@ const loadTasks = () => {
   try {
     const dataBuffer = fs.readFileSync(filePath);
     const dataJSON = dataBuffer.toString();
+    console.log()
     return JSON.parse(dataJSON);
   } catch (error) {
     return [];
@@ -17,6 +18,7 @@ const saveTasks = (tasks) => {
 };
 const addTask = (task) => {
   const tasks = loadTasks();
+
   tasks.push({ task });
   saveTasks(tasks);
 };
