@@ -9,3 +9,5 @@ node.js runs on single thread but provides excellent performance due to its asyn
 express is used to serve the routes against client request, process request and respond back to client.
 
 mongoose is the way to communicate with db from node.js. it helps to perform CRUD operations.
+
+PRD is project requirement document which serves as a blueprint for the entire development of project.
