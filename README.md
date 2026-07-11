@@ -11,3 +11,8 @@ express is used to serve the routes against client request, process request and 
 mongoose is the way to communicate with db from node.js. it helps to perform CRUD operations.
 
 PRD is project requirement document which serves as a blueprint for the entire development of project.
+
+authentication is of three types:
+session based
+token based
+passwordless 
