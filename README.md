@@ -16,3 +16,7 @@ authentication is of three types:
 session based
 token based
 passwordless 
+
+Authentication is provide access to the system after several security checks.
+
+Authorization means giving permission to various users like admin, manager, and end users. End users can't access admin rights, this is Authorization.
