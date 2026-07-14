@@ -22,3 +22,5 @@ Authentication is provide access to the system after several security checks.
 Authorization means giving permission to various users like admin, manager, and end users. End users can't access admin rights, this is Authorization.
 
 axios is the library which is used to send/receive request/response over http.
+
+JSON stands for javascript object notation. it wrap everything in key-value pairs and {}
