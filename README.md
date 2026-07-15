@@ -24,3 +24,5 @@ Authorization means giving permission to various users like admin, manager, and 
 axios is the library which is used to send/receive request/response over http.
 
 JSON stands for javascript object notation. it wrap everything in key-value pairs and {}
+
+JS is single threaded language.
