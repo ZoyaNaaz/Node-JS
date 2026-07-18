@@ -26,3 +26,6 @@ axios is the library which is used to send/receive request/response over http.
 JSON stands for javascript object notation. it wrap everything in key-value pairs and {}
 
 JS is single threaded language.
+
+postman is a tool used to test APIs. with the help of postman, we can test our code written in backend.
+
