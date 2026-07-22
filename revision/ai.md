@@ -15,15 +15,19 @@
 - After processing it generates the output.
 
 **Types of AI**
+
 - Level 1: Standalone AI - used directly like chatgpt.
 - Level 2: Integrated AI - ai capabilities build into existing s/w like email assistant.
 - Level 3: Custom AI - Tailored AI solution developed for specific business needs.
 
 **Vague Prompt**
+
 ```
 help me prepare for an interview  for a technical role
 ```
+
 **Prompt Frameworks**
+
 - **AIM Framework**
 - A: Actor(who is the AI?)
 - I: Input(What Information)
@@ -41,37 +45,44 @@ I'm a assistant incubation manager at IIMT Business Incubator Foundation, Now I 
 
 ```
 Act as a experienced recrutor at Y-Combinator.
-I'm a assistant incubation manager at IIMT Business Incubator Foundation with an experience of 1 year. 
-I want to apply in the Y-combinator for the relavent job position, 
+I'm a assistant incubation manager at IIMT Business Incubator Foundation with an experience of 1 year.
+I want to apply in the Y-combinator for the relavent job position,
 Please help me prepare for interview. I want to you ask question and evaluate my answers.
 ```
 
 ### Best AI Tools
+
 **Text and Chat AI**
+
 - chatgpt
 - gemini
 - claude
 
 **Research and summarise**
+
 - perplexity
 - notebook LM
 
 **Image Gen**
+
 - midjourney
 - nano banana
 - higgsfield
 
 **Video Gen**
+
 - Veo 3
 - Kling
 - Sora 2
 - Higgsfield
 
 **Audio and Voice**
+
 - Suno
 - Eleven Labs
 
 **Coding & Development**
+
 - Emergent
 - Cursor
 - Replit
@@ -79,18 +90,35 @@ Please help me prepare for interview. I want to you ask question and evaluate my
 - Hostinger
 
 **SEO**
+
 - Semrush
 - Hostinger
 
 **Automation & AI agents**
+
 - N8N
 - Make
 
-**Presentation & Documents** 
+**Presentation & Documents**
+
 - Gamma
-- Kimi AI 
+- Kimi AI
 
 ### How to select tool
+
 - Identify your daily tasks.(What you do repeatedly?)
 - Identify friction point(where u waste your time?)
 - Replace with AI
+
+**To create a book website using emergent**
+
+```
+Build a bookstore website, which has a following features-
+1. Book listings
+2. Book reviews
+3. Author profiles
+4. Best seller section
+5. A unique section to write story behind the book.
+
+Ask as many questions as you require to proceed
+```
