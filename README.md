@@ -29,4 +29,6 @@ JS is single threaded language.
 
 postman is a tool used to test APIs. with the help of postman, we can test our code written in backend.
 
-npm provide huge number if JS library support for development like express, crypto, mailgen etc.
+npm provide huge number of JS library support for development like express, crypto, mailgen etc.
+
+mailgen is a js Library used to send emails for verification, password Change, reset etc.
