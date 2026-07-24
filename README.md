@@ -32,3 +32,5 @@ postman is a tool used to test APIs. with the help of postman, we can test our c
 npm provide huge number of JS library support for development like express, crypto, mailgen etc.
 
 mailgen is a js Library used to send emails for verification, password Change, reset etc.
+
+express is a library which is used to create server.
